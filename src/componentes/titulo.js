@@ -1,15 +1,13 @@
 import React from 'react';
 
-const TituloRojo = () => {
-    const nombre = 'kikin'
-    const color = 'red'
-    return (<h1 className='titulo' style={{color: color}}>Hola {nombre}!</h1>);
+const Titulo = ({usuario = 'Usuario', color = 'grey'}) => {
+    return (<h1 className='titulo' style={{color: color}}>Hola {usuario}!</h1>);
 }
 
-const TituloAzul = () => {
-    const nombre = 'kikin'
-    const color = 'blue'
-    return (<h1 className='titulo' style={{color: color}}>Hola {nombre}!</h1>);
-}
+// const TituloAzul = (props) => {
+//     const color = 'blue'
+//     return (<h1 className='titulo' style={{color: color}}>Hola {props.user}!</h1>);
+// }
  
-export {TituloRojo,TituloAzul};
+export {Titulo};
+

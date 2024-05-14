@@ -1,13 +1,13 @@
 import React from "react";
-import {TituloRojo,TituloAzul} from "./titulo";
+import {Titulo} from "./titulo";
 
 const Usuario = () => {
-    const pais = undefined;
-    const amigos = ['Kikin', 'Perro', 'Gato']
+    const pais = 'Meixco';
+    const amigos = ['Kikin', 'Enrique', 'Pedro']
     return(
       <div>
-      <TituloAzul/>
-      <TituloRojo/>
+      <Titulo />
+      <Titulo usuario = {amigos[2]} color = "yellow"/>
       <p>Tú lista de amigos es</p>
         <p>Has iniciado sesión</p>
         {pais && <p>Tú eres de {pais}</p>}
@@ -16,7 +16,6 @@ const Usuario = () => {
         </ul>
         <p>Saludos</p>
       </div>
-  
     );
   }
 
