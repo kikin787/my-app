@@ -10,6 +10,11 @@ const Boton = styled.button`
     font-family: Arial, sans-serif;
     cursor: pointer;
     transition: .3s ease all;
+
+    &:hover{
+        background: #44a559;
+        color: #fff;
+    }
 `;
 
 export default Boton;
