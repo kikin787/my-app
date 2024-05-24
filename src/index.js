@@ -5,6 +5,7 @@ import FormularioInicioSesion from './componentes/formularioInicioSesion';
 import Contador from './componentes/contadorClass';
 import ContadorFuncional from './componentes/ContadorFuncional';
 import './estilos/index.css';
+import Boton from './elementos/Boton'
 
 
 
@@ -19,7 +20,8 @@ const App = () => {
                 <Usuario/> 
                 {/* <Contador cantidadAIncrementar = {10} cantidadADisminuir = {5}/> */}
                 <ContadorFuncional cantidadAIncrementar = {10} cantidadADisminuir = {8} />
-                <button onClick={() => cambiarEstadoSesion(false)}>Cerrar Sesión</button>
+                <Boton onClick={() => cambiarEstadoSesion(false)}>Cerrar Sesión</Boton>
+                {/* <Boton></Boton> */}
             </div>
             :
             <div>
