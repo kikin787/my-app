@@ -51,7 +51,9 @@ const FormularioInicioSesion = (props) => {
                     className={styles.input}
                 />
             </div>
-            <Boton type="submit">Iniciar Sesión</Boton>
+            <div>
+                <Boton largo type="submit">Iniciar Sesión</Boton>
+            </div>
         </form>
 
     );
